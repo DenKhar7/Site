@@ -1,0 +1,132 @@
+/* BOUTON REMONTER */
+
+#remonter { /* Id du bouton remonter qui permet de remonter en haut de la page quelque soit l'endroit ou vous trouvez */
+    position: fixed; /* L'élément est positionné relativement au bloc initial */
+    display: block; /* type d'affichage extérieur, permet de dire comment l'élément se comporte avec le flux */
+    padding: 0.5em; 
+    border-radius: 7px;
+    right: 10px;
+    bottom: 10px;
+    font-size: 2em;
+    padding: 15px;
+    background-color:#fff;
+    color: #9bbdc4;
+    border: none; /* Pas de bordure */
+    outline: none; /* Pas de ligne */
+    text-decoration: none;
+    font-size: 30px;
+
+    transition: all 400ms linear; /* La transition s'applique à tous les effets modifiés "all" dure 400 millisecondes avec la meme vitesse de depart que celle d'arrivée */
+    
+    
+  }
+
+#remonter:hover{ /* Propriétés qui change lors du hover */
+    background-color: #9BBDC4;
+    color: #fff;
+    border-radius: 17px;
+    
+}
+
+/* FORMULAIRE*/
+
+label{
+    font-size: 1.5vh;
+    text-align: center;
+}
+h2{
+    text-align: center;
+}
+
+form {
+    display : flex; /* conteneur flexible */
+    flex-direction: column; /* Les éléments s'affichent en colonnes */
+    margin-top:-10px;
+
+}
+
+input[type=checkbox],
+input[type=radio] {
+    appearance: none;  
+    border-radius: 4px;
+    width: 15px;
+    height: 15px;
+    background: #9BBDC4;
+    transition: 0.2s linear all ; 
+}
+
+input[type="checkbox"]:checked,
+input[type="radio"]:checked  { /* on récupère  uniquement les type="radio" "checkbox"  qui sont contenus dans les balises input*/
+    transform: rotate(45deg);
+    background: #386870;
+    margin:0;
+}
+
+/* CATALOGUE */
+.catalogue {
+    margin-top: 30px;
+    display: grid; 
+    grid-template-columns: 1fr 1fr   ;
+    grid-template-rows: 1fr 1fr ;
+    
+}
+
+.box{
+
+    margin:20px;
+    background-color:  #386870;
+    color : #fff;
+    border-radius : 20px;
+    padding : 20px;
+    opacity: 1;
+    box-shadow: 10px 12px 8px;
+}
+
+
+.box h2 {
+    margin-top: -10px;
+    text-align: center;
+    transition: 0.2s linear 0s;
+}
+
+.box h2:hover{
+   
+    color: #9bbdc4;
+}
+
+.box img{ 
+        transition: all 100ms linear;
+        border-radius: 10px;
+        width:60%;
+        margin-top: auto;
+    }
+    
+.box img.gauche:active    {
+    transform: translate(110%,17%)scale(1.8); /* l'image se déplace vers la droite et effectue un zoom*/
+    object-position: center;
+}
+.box img.droite:active    {
+    transform: translate(-70%,17%)scale(1.8);
+    object-position: center;
+}
+.box p {
+    margin-top : 5px;
+}
+
+
+.box p:hover{
+    transition: 0.2s linear 0s;
+    color: #9bbdc4;
+}
+.box_filtre{
+    margin-top : 50px;
+    margin-left : 10px;
+    margin-right: 10px;
+    margin-bottom:auto;
+    background-color:  white;
+    color : #386870;
+    border-radius : 20px;
+    padding : 20px;
+    opacity: 1;
+    
+}

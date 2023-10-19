@@ -1,0 +1,169 @@
+
+h1 {
+  font-size: 100%;
+  color: #386870;
+
+}
+.container {
+  
+  width: 100%;
+  height: 92vh;
+  display: grid;
+  justify-content: space-evenly;
+  align-items: center;
+  
+}
+
+.detailpayement {
+  margin : 10px;
+  grid-column-start: 1 ;
+  grid-column-end:  1;
+  grid-row-start : 1;
+  grid-row-end: 2 ;
+}
+/*
+Payment Information card
+*/
+.detailpanier,
+.summary_card {
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  padding: 0.625em;
+  background-color: #fff;
+
+}
+
+/*
+Order Card Item Card
+*/
+.card_item {
+  display: flex;
+  position: relative;
+  margin: 10px 0;
+}
+.close-btn {
+  position: absolute;
+  right: 10px;
+  top: 5px;
+}
+
+.card_item .product_img img {
+  height: 80%;
+  margin-right: 20px;
+  width: 100px;
+  border-radius: 5px;
+}
+
+.product_info h1 {
+  font-size: 70%;
+  color: #386870;
+  margin: 5px 0;
+}
+
+.product_info p {  justify-content: space-evenly;
+  align-items: center;
+}
+.product_rate_info {
+  display: flex;
+  margin: 5px 0;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.order_summary {
+  margin : 20px;
+  grid-column-start: 3 ;
+  grid-column-end: 4;
+  grid-row-start: 1 ;
+  grid-row-end :2;
+}
+
+/*
+Order price & total
+*/
+.order_price,
+.order_service,
+.order_total {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  line-height: 5%;
+}
+.order_price p,
+.order_service p {
+  color: #a1a1a1;
+}
+
+.order_total p {
+  font-weight: 600;
+}
+
+/*
+Payment Information all input
+*/
+
+input {
+  outline: 0;
+  background: #f2f2f2;
+  border-radius: 4px;
+  width: 40%;
+  border: 0;
+  caret-color: #386870;
+  margin: 10px 15px;
+  padding: 15px 20px;
+  box-sizing: border-box;
+  font-size: 70%;
+}
+
+
+.Nom,
+.panier1,
+.adresse {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+.panier,
+.add_savedcard{
+ /* display: flex; */
+  flex-direction: column;
+  width: 100%;
+  height: 100px;
+  border: 2px solid #386870;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  font-size: 75%;
+  justify-content: space-evenly;
+  align-items: start;
+  line-height: 10%;
+  color: #386870;
+}
+.panier:hover,
+.add_savedcard:hover{
+background-color: #9bbdc4;
+color: #fff;
+}
+/*
+Procced Payment button
+*/
+.proced_payment a{
+  color: white;
+  text-decoration: none;
+  font-size:100%;
+  margin-top: 10px;
+  transition: all 200ms linear;
+  padding: 0.5em;
+  border-radius: 7px;
+  background-color:#386870;
+}
+
+.proced_payment a:hover{
+  color: #386870;
+  background-color: white;
+  border: none;
+  border-radius: 17px;
+}

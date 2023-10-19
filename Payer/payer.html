@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>✔ Payer</title>
+    <link rel="stylesheet" href="css/style_payer.css">
+    <link rel="stylesheet" href="../main_assets/style.css">
+</head>
+<body>
+  <header>
+    <strong><a href="../Accueil/index_accueil.html" class="header-logo">◀ ✭ StellarBoosters™ ✭</a></strong>
+              <nav class="header-menu">
+                <a href="../Connection/index_connection.html">☻ Se connecter</a>
+                <a href="../Panier/index_panier.html">✔ Panier</a>
+                    <a href="../Accueil/index_accueil.html#Apropos">❤ A propos</a>
+                    <a href="../Catalogue/index_catalogue.html">☰ Catalogue</a>
+                </nav>
+</header>
+<div class="wrapper">
+<div class="container">
+    <div class="detailpayement">
+      <h1>Information de paiement </h1>
+      <div class="detailpanier">
+        <div>
+          <div class="Nom">
+            <input type="text" placeholder="Prénom" />
+            <input type="text" placeholder="Nom de famille" />
+          </div>
+          <div class="adresse">
+            <input type="text" onkeyup="change()" id="put" placeholder="Adresse" />
+            <input type="text" placeholder="Pays" />
+          </div>
+        </div>
+        <h1>Détails de vos achats</h1>
+        <div class="panier1">
+          <div class="panier">
+            <h4>Adresse personnelle</h4>
+            <p id="output">5bis boulevard de Berlin,</p>
+            <p>44000</p>
+          </div>
+          <div class="add_savedcard">
+            <h4>Adresse enregitrée</h4>
+            <p>3bis rue Nationale,</p>
+            <p>85100</p>
+          </div>
+        </div>
+        <div class="proced_payment">
+          <a href="">Procéder au paiement</a>
+        </div>
+      </div>
+    </div>
+    <div class="order_summary">
+      <h1>Commande</h1>
+      <div class="summary_card">
+        <div class="card_item">
+          <div class="product_img">
+            <img src="../Catalogue/src/img/russie/Soyouz/soyuz.jpg" alt="" />
+          </div>
+          <div class="product_info">
+            <h1>Vaisseau Soyouz 18</h1>
+            <p>Russie</p>
+            <div class="close-btn">
+              <i class="fa fa-close"></i>
+            </div>
+            <div class="product_rate_info">
+              <h1>1 450 000 €</h1>
+              <input type="number" placeholder="1"/>
+            </div>
+          </div>
+        </div>
+        <div class="card_item">
+          <div class="product_img">
+            <img src="../Catalogue/src/img/amerique/Delta/delta_4_heavy.jpg" alt="" />
+          </div>
+          <div class="product_info">
+            <h1>Delta IV Heavy</h1>
+            <p>Amerique</p>
+            <div class="close-btn">
+              <i class="fa fa-close"></i>
+            </div>
+            <div class="product_rate_info">
+              <h1>1 000 000 €</h1>
+              <input type="number" placeholder="1"  />
+            </div>
+          </div>
+        </div>
+        <hr />
+        <div class="order_price">
+          <p>Tous</p>
+          <h4>2 450 000 €</h4>
+        </div>
+        <div class="order_service">
+          <p>Livraison</p>
+          <h4>50 000  €</h4>
+        </div>
+        <div class="order_total">
+          <p>Total</p>
+          <h4>2 500 0 €</h4>
+        </div>
+      </div>
+    </div>
+  </div>  
+</div>
+<footer>
+  <h3>Nous contacter:</h3>
+  <p>Vous pouvez contacter notre entreprise à l'email suivante <a href ="mailto:contact@stellarsboosters.fr">contact@StellarBoosters.fr</a> <br> 
+  nos équipes assurent un service 7 jours sur 7 de 3h00 à 18h00 (hors 1 janvier 24,25 décembre et 1er mai).</p>
+</footer>
+</body>

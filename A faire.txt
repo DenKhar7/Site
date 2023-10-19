@@ -1,0 +1,41 @@
+⚙️✅❌
+
+VALIDATEUR  et COMMENTAIRES : 
+- Accueil : Titouan : ✅
+- Catalogue : Titouan : ✅
+- Connexion : Titouan : ⚙️
+- main assets : Anais : ⚙️ 
+- Panier :Anais:⚙️
+- Payer : Denis : ⚙️
+
+TOUT LE TEMPS : 
+-> Validateur ::
+-> Police : :
+A faire : 
+
+-> A propos : Anaïs:  ✅
+-> bouton retour en haut pour Catalogue : Titouan :✅
+-> zoom image css Catalogue : Titouan : ✅      
+-> Footer non responsive page panier et connection : Anais Titouan :  ✅
+-> Responsive connection : Titouan : ✅
+-> Faire le footer et le contact : :✅
+-> Faire le contenu du a propos : Titouan :✅
+-> Texte dans les boites achats : : ❌
+-> ajouter icones: Anais: ✅
+-> zoom image panier:Titouan:✅
+-> filtre catalogue :Anais: ✅
+-> Débuguer et faire responsive la page payer.html : Denis Titouan : ✅
+-> Bouton payer enlever l'aboslute et l'intégrer :Titouan : ✅
+-> REMETTRE LE TEXTE DANS LE CADRE SUR LA PAGE PAYER ::❌
+-> fond d'ecran a régler: Anais : ⚙️
+
+BONUS : 
+->Avis clients::
+->police différente pour le logo::
+->clic permanent image et pourquoi pas article::
+->Promo qui défile::
+-> page :
+    mot de passe oublié :: Denis ⚙️
+    inscription compte :: 
+->traduction de la page payer:Anais:⚙️
+-> design page payer::

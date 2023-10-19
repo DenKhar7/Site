@@ -1,0 +1,97 @@
+/*
+GLOBAL
+*/
+html {
+    scroll-behavior: smooth; /* Ajoute une transition au scroll*/
+    font-family: 'Monserrat', sans-serif; /* Toutes les  polices d'écritures sont en monserrat*/
+}
+
+body {
+    display: flex; /* rend les éléments flex, responsive*/
+    flex-direction: column; /* affiche à la verticale */
+    min-height: 100vh; /* hauteur minimun du body, permet de coller le footer en bas*/
+    background-image: url("../Accueil/src/img/banner image/banner.png"); /*ajoute le fond d'ecran fusée sur toutes les pages */
+    font-size: 1.5vw; /* permet d'avoir le texte responsive */
+}
+
+/*
+HEADER
+*/
+
+
+header {
+    width: 100%; /* met la taille du header en 100 % de la taille de la page-> rend responsive */
+    background-color: #386870; /* couleur du fond du header */
+    line-height : 250%; /*Epaisseur du header en pourcentage pour du responsive */
+    border-radius: 20px; /* ajoute un bord arrondit */
+    margin-top: 10px; /*ajoute une marge de en haut du header*/
+}
+
+.header-logo {
+    color: white; /*couleur du logo en blanc */
+    float: left; /* le logo se met sur la gauche du header */
+    margin-left: 30px; /* ajoute une marge a guche du logo afin de le decoller du bord du header */
+    text-decoration: none; /*enleve les décorations de texte des liens comme le surlignage, la couleur bleue*/
+    transition: 0.2s linear 0s; /* ajoute une transition plus lente pour un effet plus beau que immédiat */
+}
+
+.header-logo:hover { /* Effet au survol */
+    color: 	#9bbdc4;
+    
+}
+header .header-menu a {
+    margin-right: 15px;
+    float : right; /* Position des éléments dans l'élément*/
+    color: white;
+    text-decoration: none;
+    transition: 0.2s linear 0s;
+}
+
+.header-menu a:hover {
+    color: 	#9bbdc4;
+}
+
+.wrapper {
+    /* occupe la hauteur restante */
+    flex-shrink: 1;
+    flex-grow: 1;
+    flex-basis: auto;
+    display: flex; /* crée un contexte flex pour ses enfants */
+    flex-direction: row; /* affichage horizontal */
+}
+.content {
+    /* occupe la largeur restante */
+    flex-shrink: 1; /* Facteur de rétrécissement d'un élément flexible */
+    flex-grow: 10; 
+    flex-basis: 1;
+    color:#9bbdc4;
+    text-align: center;
+    
+}
+section {
+    margin: 20px;
+    background: #386870;
+    border-radius: 20px;
+    
+}
+section h2{
+    text-align: center;
+}
+section,footer {
+    padding: 0.5em;/*ajoute une marge intérireure au contener*/
+    border: 10px;
+    
+}
+footer {
+    background: white;
+    text-align: center;
+    color: #386870;
+    border-radius: 20px;
+    margin-top:100px;
+    
+}
+
+footer a{
+    text-decoration: none;
+    color : #386870;
+}

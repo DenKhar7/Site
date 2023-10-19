@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+<!--head -->
+<head>
+    <meta charset="UTF-8">
+    <title>✔ Panier</title> <!--Titre de la page-->
+<!-- CSS -->
+    <link rel="stylesheet" href="src/css/style_panier.css"> <!--Fichier style de la page de panier-->
+    <link rel="stylesheet" href="../main_assets/style.css"> <!--Fichier style de la page ichier style commun qui contient les informations style du 
+                                                            body, header, footer-->
+<!-- CSS -->
+</head>
+<!-- head -->
+
+<!--header-->
+<body>
+<header>
+    <strong><a href="../Accueil/index_accueil.html" class="header-logo">◀ ✭ StellarBoosters™ ✭</a></strong> <!--Hyperlien, embelli grâce à la balise strong qui le définit comme important -->
+              <nav class="header-menu">
+                <a href="../Connection/index_connection.html">☻ Se connecter</a> <!--balise a, hyperlien qui renvoie vers une autre page web grâce à des chemins relatifs-->
+                    <a href="../Accueil/index_accueil.html#Apropos">✔ Panier</a>
+                    <a href="../Catalogue/index_catalogue.html">☰ Catalogue</a>
+                </nav>
+</header>
+<!--header-->
+
+<!--Wrapper-->
+<div class="wrapper"> <!-- le wrapper est en flex il permet la responsivité -->
+    <div class="panier">    
+        <h1> Récapitulatif de votre panier </h1>
+<!--L'article 1-->
+        <div class="liste_panier">
+            <div class="article"> <!-- permet lister les caracteristique d'article en seule ligne -->
+                
+                <img class="gauche" src="../Catalogue/src/img/russie/Soyouz/soyuz.jpg" alt="fusée">
+                <div class="contenu">
+                    <h1>Descriptif</h1>
+                    <h2>Vaisseau Soyouz 18 &#x1F1F7;&#x1F1FA;</h2>
+                </div>
+                <div class="contenu">
+                    <h1>Prix</h1>
+                    <h2>1 450 000 €</h2>
+                </div>
+                <div class="contenu">
+                    <h1>Quantité</h1>
+                    <h2>1</h2>
+                </div>
+                <div class="contenu">
+                    <h1>Date de livraison estimée</h1>
+                    <h2>19/11/2023</h2>
+                </div>
+        </div>
+<!--L'article 1-->
+
+<!--L'article 2-->
+        <div class="liste_panier">
+            <div class="article"> <!-- permet lister les caracteristique d'article en seule ligne -->
+                    
+                    <img class="gauche" src="../Catalogue/src/img/amerique/Delta/delta_4_heavy.jpg" alt="fusée">
+                    
+                    <div class="contenu">
+                        <h1>Descriptif</h1>
+                        <h2>Delta IV heavy</h2>
+                    </div>
+                    <div class="contenu">
+                        <h1>Prix</h1>
+                        <h2>1 000 000 €</h2>
+                    </div>
+                    <div class="contenu">
+                        <h1>Quantité</h1>
+                        <h2>2</h2>
+                    </div>
+                    <div class="contenu">
+                        <h1>Date de livraison estimée</h1>
+                        <h2>20/02/2024</h2>
+                    </div>
+            </div>
+        </div>
+<!--L'article 2-->
+        
+    </div>
+    <a class="payer" href="../Payer/payer.html">✔ Payer</a> <!--bouton "payer"-->
+</div>
+ 
+</div>
+<footer> <!--Pied de page-->
+    <h3>Nous contacter:</h3>
+    <p>Vous pouvez contacter notre entreprise à l'email suivante <a href ="mailto:contact@stellarsboosters.fr">contact@StellarBoosters.fr</a> <br> 
+    nos équipes assurent un service 7 jours sur 7 de 3h00 à 18h00 (hors 1 janvier 24,25 décembre et 1er mai).</p>
+  </footer>
+</body>
+
+  </html><!--Fin de la page html-->

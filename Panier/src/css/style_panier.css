@@ -1,0 +1,76 @@
+/*Panier*/
+.panier { /*classe responsable de l'arrière-plan de panier */ 
+    width : auto;
+    height : auto;
+    background-color : #fff;
+    margin : 20px;
+    margin-bottom : auto;
+    border-radius : 5px;
+    flex-direction : column; /*Les aliment (chaque produit) s'affichent en column*/
+}
+.panier h1 { 
+    text-align : center; /*centraliser du text*/
+    font-size : 100%;
+    color : #386870; /*couleur du texte*/
+}
+.panier_liste {
+    display : grid;
+    grid-template-columns : 1fr 1fr;
+    grid-template-rows : 1fr 1fr;
+    gap : 10px;
+} 
+/*Les Articles*/
+.article {
+    display : flex; /*conteneur flexible*/
+    flex-direction : row; /*Les aliments s'affichent en ligne*/
+    margin : 10px;
+    background-color : #386870;
+    color : #fff;
+    border-radius : 5px;
+    padding : 0.5em;
+    font-size : 80%;
+}
+.article img {
+    transition : all 100ms linear; /*vitesse et type de transition de la petite à la grande image*/
+    margin-top : 20px;
+    border-radius : 10px;
+    width : 15%;
+}
+.article img.gauche:active {
+    transform : translate(110%,17%) scale(2); /*zoom d'image*/
+    object-position : center; 
+}
+.article .contenu {
+    display : flex; 
+    flex-direction : column;
+    align-items : center;
+    justify-content : flex-start;
+    text-align : center;
+    margin : 10px;
+}
+.article .contenu h1 {
+    font-size : 200%;
+    color : #9bbdc4;
+}
+
+/*Bouton payer*/
+.payer {
+    float : right;
+    margin : 10px;
+    color : white;
+    text-decoration : none; /*pas de decoration*/
+    font-size : 100%;
+    transition : all 200ms linear; /*encore transition entre 2 form*/
+    padding : 0.5em;
+    border-radius : 7px;
+    background-color : #386870;
+}
+.payer a {
+    margin-top : 10px;
+}
+.payer:hover {
+    background-color : #9BBDC4;
+    color : #fff;
+    border : none;
+    border-radius : 17px;
+}

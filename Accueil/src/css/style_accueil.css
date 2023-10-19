@@ -1,0 +1,34 @@
+/* BOUTON */
+a.boutton { 
+    color: white; /* Couleur de texte  */
+    text-decoration: none; /* aucune décoration de texte  */
+    font-size:100%; /* Taille de la police à 100% */
+    margin-top: 10px; /* Espace entre le bouton et l'élément au dessus de 10pixels */
+    transition: all 200ms linear; /* Temps de transition du hover */
+    padding: 0.5em; /* marge intérieurs */
+    border-radius: 15px; /* bordure arrondie de en tant de pixels */
+    background-color:#386870; /* Fond d'écran du bouton de couleur #383670 */
+}
+
+a.boutton:hover{ /* Au survol alors fais */
+    color: #386870; 
+    background-color: white;
+    border-radius: 40px;
+}
+
+/*  Box accueil */
+
+.bienvenue,
+.bienvenue p {
+    margin:120px; /* margin regroupe margin-top, margin-bottom, margin-left, margin-right */
+    border: solid; /* bordure autour de l'élément */
+    border-radius: 20px;
+    text-align: center; /* alignement du texte  : centré */
+    color:#386870; 
+    border-color: white; /* couleur */
+}
+    
+    
+.bienvenue h1{
+    color:white;
+}

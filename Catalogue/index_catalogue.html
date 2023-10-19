@@ -1,0 +1,183 @@
+    <!DOCTYPE html>
+    <html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>☰ Catalogue</title>
+        <link rel="stylesheet" href="src/css/style_catalogue.css">
+        <link rel="stylesheet" href="../main_assets/style.css">
+    </head>
+    <body>
+    <header id="header">
+        <strong><a href="../Accueil/index_accueil.html" class="header-logo">◀ ✭ StellarBoosters™ ✭</a></strong>
+                <nav class="header-menu">
+                    <a href="../Connection/index_connection.html">☻ Se connecter</a>
+                        <a href="../Panier/index_panier.html">✔ Panier</a>
+                        <a href="../Accueil/index_accueil.html#Apropos">❤ A propos</a>
+                    </nav>
+    </header>
+        
+    <a id="remonter" href="../Catalogue/index_catalogue.html#header">▲</a> <!-- bouton qui reste en bas de la page et permet de remonter facilement en haut de la page-->
+    <div class="wrapper">
+            
+            <div class="box_filtre"> <!-- Element qui contient les filtres-->
+                <form method="post" class="formulaire_filtre"> <!-- Creation d'un formulaire en methode POST, les informations passent par le corps de la requête HTTP-->
+                    <h2>Filtres</h2>
+                        <h3><label data-name="prix">Prix:</label></h3>
+                            <div><label class="petit"> <!-- balise label, ajoute une légende explicative ou une étiquette à des éléments tels que les champs de saisie, les boutons ou les cases à cocher-->
+                                <input type="radio" id="croissant" name="prix" value="croissant" checked > <!-- bouton radio-->
+                                Croissant</label>
+                            </div>
+                            <div><label class="petit">
+                                <input type="radio" id="decroissant" name="prix" value="decroissant" checked >
+                                Decroissant</label>
+                            </div>
+                            <h3><label data-name="constructeur">Constructeur:</label></h3>
+                            <div><label class="checkBox" >
+                                <input type="checkbox" id="France" name="constructeur" value="France" > <!-- bouton checkbox-->
+                                France / ESA</label>
+                            </div>
+                            <div><label>
+                                <input type="checkbox" id="SpaceX" name="constructeur" value="SpaceX">
+                                SpaceX</label>
+                            </div>
+                            <div><label>
+                                <input type="checkbox" id="Amérique" name="constructeur" value="Amérique" >
+                                Amérique</label>
+                            </div>
+                            <div><label>
+                                <input type="checkbox" id="Russie" name="constructeur" value="Russie" >
+                                Russie (ex : URSS)</label>
+                            </div>
+                            <div><label>
+                                <input type="checkbox" id="Japon" name="constructeur" value="Japon" >
+                                Japon</label>
+                            </div>
+                            <div><label>
+                                <input type="checkbox" id="coree_du_nord" name="constructeur" value="coree_du_nord" >
+                                Corée du Nord</label>
+                            </div>
+                            <div><label>
+                                <input type="checkbox" id="Chine" name="constructeur" value="Chine" >
+                                Chine</label>
+                            </div>
+                            <div><label>
+                                <input type="checkbox" id="Allemagne" name="constructeur" value="Allemagne" >
+                                Allemagne</label>
+                            </div>
+                </form>
+            </div>
+        <div class="catalogue">
+            <!--div catalogue : grid qui contient les box 
+                -> div box : contient les éléments : image, prix, nom  -->
+                <div class="box">
+                    <!--https://destination-orbite.net/astronautique/compendium/delta-c-->
+                    <h2>Delta-C</h2>
+                    <img class="gauche" alt="Fusee" src="src/img/amerique/Delta/delta_c.jpg">  <!-- image, alt permet d'afficher un texte si l'image ne s'affiche pas -->
+                    <p>400 000 €</p>  
+                </div>
+                <div class="box">
+                    <!--https://destination-orbite.net/astronautique/compendium/delta-d-->
+                    <h2>Delta-D</h2>
+                    <img class="droite" alt="Fusee" src="src/img/amerique/Delta/delta_e1.jpg">
+                    <p>550 000 €</p>
+                </div>
+                <div class="box">
+                    <!--https://destination-orbite.net/astronautique/compendium/delta-n-6-->
+                    <h2>Delta N6 </h2>
+                    <img class="gauche" alt="Fusee" src="src/img/amerique/Delta/delta_n6.jpg">
+                    <p>600 000 €</p>
+                </div>
+                <div class="box">
+                    <!-- https://destination-orbite.net/astronautique/compendium/delta-iv-m-->
+                    <h2>Delta 4M</h2>
+                    <img class="droite" alt="Fusee" src="src/img/amerique/Delta/delta_4_m.jpg">
+                    <p>800 000 €</p>
+                </div>
+                <div class="box">
+                    <h2>Delta 4 Heavy</h2>
+                    <img class="gauche" alt="Fusee" src="src/img/amerique/Delta/delta_4_heavy.jpg">
+                    <p>1 000 000 €</p>
+                </div>
+                <div class="box">
+                    <!-- https://destination-orbite.net/astronautique/compendium/antares-110 -->
+                    <h2>Antares 110</h2>
+                    <img class="droite" alt="Fusee" src="src/img/amerique/antares/antares_110.jpg">
+                    <p>1 500 000 €</p>
+                </div>
+                <div class="box">
+                    <!--https://destination-orbite.net/astronautique/compendium/antares-230-->
+                    <h2>Antares 230</h2>
+                    <img class="gauche" alt="Fusee" src="src/img/amerique/antares/antares_230_plus.jpg">
+                    <p>2 000 000 €</p>
+                </div>
+                <div class="box">
+                    <h2>Navette spatiale</h2>
+                    <img class="droite" alt="Fusee" src="src/img/amerique/space_transportation_system/sts.jpg">
+                    <p>5 000 000 €</p>
+                </div>
+
+                <!-- RUSSIE-->
+                <div class="box">
+                    <!--https://destination-orbite.net/astronautique/compendium/voskhod-->
+                    <h2>Voskhod</h2>
+                    <img class="gauche" alt="Fusee" src="src/img/russie/voskhod/voskhod.jpg">
+                    <p>250 000 €</p>
+                </div>
+                <div class="box">
+                    <!-- https://destination-orbite.net/astronautique/compendium/soyuz-->
+                    <h2>Soyouz 18</h2>
+                    <img class="droite" alt="Fusee" src="src/img/russie/Soyouz/soyuz.jpg">
+                    <p> 1 450 000 €</p>
+                </div>
+                <div class="box">
+                    <!-- https://destination-orbite.net/astronautique/compendium/angara-a5-briz-m-->
+                    <h2>Angara</h2>
+                    <img class="gauche" alt="Fusee" src="src/img/russie/Angara/angara_a5_briz.jpg">
+                    <p>1 000 000 €</p>
+                </div>
+                <div class="box">
+                    <!-- https://destination-orbite.net/astronautique/compendium/angara-a5-briz-m-->
+                    <h2>Vostok 2M</h2>
+                    <img class="droite" alt="Fusee" src="src/img/russie/Vostok/vostok_2m.jpg">
+                    <p>1 500 000 €</p>
+                </div>
+                <div class="box">
+                
+                    <h2>Diamant</h2>
+                    <img class="gauche" alt="Fusee" src="src/img/France_europe/Diamant/Diamant.jpg">
+                    <p>250 000 €</p>
+                </div>
+                <div class="box">
+                    <!-- https://destination-orbite.net/astronautique/compendium/ariane-3-->
+                    <h2>Ariane 3</h2>
+                    <img class="droite" alt="Fusee" src="src/img/France_europe/Ariane/ariane_3.jpg">
+                    <p>3 000 000 €</p>
+                </div>
+                <div class="box">
+                    <!--https://destination-orbite.net/astronautique/compendium/ariane-44l-->
+                    <h2>Ariane 4</h2>
+                    <img class="gauche" alt="Fusee" src="src/img/France_europe/Ariane/ariane_44l.jpg">
+                    <p>5 000 000 €</p>
+                </div>
+                <div class="box">
+                    <!-- https://destination-orbite.net/astronautique/compendium/ariane-5eca-->
+                    <h2>Ariane 5</h2>
+                    <img class="droite" alt="Fusee" src="src/img/France_europe/Ariane/Ariane_5_ECA.jpeg">
+                    <p>10 000 000 €</p>
+                </div>
+
+                
+        </div>
+    
+    </div> 
+
+
+    
+
+    <footer>
+        <h3>Nous contacter:</h3>
+        <p>Vous pouvez contacter notre entreprise à l'email suivante <a href ="mailto:contact@stellarsboosters.fr">contact@StellarBoosters.fr</a> <br> 
+        nos équipes assurent un service 7 jours sur 7 de 3h00 à 18h00 (hors 1 janvier 24,25 décembre et 1er mai).</p>
+    </footer>
+    </body>
+    </html>
